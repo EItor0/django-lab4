@@ -27,8 +27,8 @@ At the top of the HTML file, static loading was enabled: {% load static %}
 
 2.Adding CSS and Images
 All CSS and image files were placed in: myapp/static/myapp/
-The CSS file was connected in the template using: <link rel="stylesheet" href="{% static 'myapp/styles.css' %}">
-Images were loaded with: <img src="{% static 'myapp/breakfast.jpg' %}" alt="Breakfast">
+The CSS file was connected in the template using: "<link rel="stylesheet" href="{% static 'myapp/styles.css' %}">"
+Images were loaded with: "<img src="{% static 'myapp/breakfast.jpg' %}" alt="Breakfast">"
 
 3.Creating the View
 In myapp/views.py, the view that returns the HTML template was added:
