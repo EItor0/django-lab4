@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodieland</title>
+  <link rel="stylesheet" href="{% static 'myapp/styles.css' %}">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="logo">Foodieland<span>.</span></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Recipes</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <a href="#">About Us</a>
+    </nav>
+    <div class="socials">
+      <a href="#">🔍</a>
+      <a href="#">♥</a>
+      <a href="#">👤</a>
+    </div>
+  </header>
+
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Categories</h2>
+    <div class="category-list">
+      <div class="category">
+        <img src="{% static 'myapp/breakfast.jpg' %}" alt="Breakfast">
+        <p>Breakfast</p>
+      </div>
+      <div class="category">
+        <img src="{% static 'myapp/vegan.jpg' %}" alt="Vegan">
+        <p>Vegan</p>
+      </div>
+      <div class="category">
+        <img src="{% static 'myapp/meat.jpg' %}" alt="Meat">
+        <p>Meat</p>
+      </div>
+      <div class="category">
+        <img src="{% static 'myapp/Desserts.jpg' %}" alt="Dessert">
+        <p>Dessert</p>
+      </div>
+      <div class="category">
+        <img src="{% static 'myapp/lunch.jpg' %}" alt="Lunch">
+        <p>Lunch</p>
+      </div>
+      <div class="category">
+        <img src="{% static 'myapp/chocolate.jpg' %}" alt="Chocolate">
+        <p>Chocolate</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipes -->
+  <section class="recipes">
+    <h2>Simple and tasty recipes</h2>
+    <p class="subtitle">List of delicious dishes that are easy and quick to make.</p>
+    <div class="recipe-grid">
+      <div class="recipe-card">
+        <img src="{% static 'myapp/Juicy-Cheeseburger.jpg' %}" alt="Burger">
+        <h3>Big and Juicy Wagyu Beef Cheeseburger</h3>
+        <p>30 min • Snack</p>
+      </div>
+      <div class="recipe-card">
+        <img src="{% static 'myapp/roasted-salmon.jpg' %}" alt="Salmon">
+        <h3>Fresh Lime Roasted Salmon with Ginger Sauce</h3>
+        <p>25 min • Fish</p>
+      </div>
+      <div class="recipe-card">
+        <img src="{% static 'myapp/Strawberry-Oatmeal_pancakes.jpg' %}" alt="Pancake">
+        <h3>Strawberry Oatmeal Pancake with Honey Syrup</h3>
+        <p>20 min • Sweet</p>
+      </div>
+      <div class="recipe-card">
+        <img src="{% static 'myapp/Healthy-Chicken-Salad.jpg' %}" alt="Salad">
+        <h3>Fresh and Healthy Mixed Mayonnaise Salad</h3>
+        <p>15 min • Salad</p>
+      </div>
+      <div class="recipe-card">
+        <img src="{% static 'myapp/Chicken-Meatballs.jpg' %}" alt="Chicken">
+        <h3>Chicken Meatballs with Cream Cheese</h3>
+        <p>40 min • Lunch</p>
+      </div>
+      <div class="recipe-card">
+        <img src="{% static 'myapp/Smoothie-Bowl.jpg' %}" alt="Smoothie">
+        <h3>Healthy and Fresh Smoothie Bowl</h3>
+        <p>10 min • Breakfast</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <section class="subscribe">
+    <h2>Deliciousness to your inbox</h2>
+    <p>Get the latest recipes and cooking tips delivered directly to your email.</p>
+    <div class="subscribe-box">
+      <input type="email" placeholder="Your email address">
+      <button>Subscribe</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">Foodieland<span>.</span></div>
+    <p>© 2025 Foodieland. Made by Fuad Abdullayev.</p>
+  </footer>
+</body>
+</html>
